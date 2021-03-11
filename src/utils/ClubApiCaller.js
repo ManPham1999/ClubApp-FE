@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_BASE_URL = 'https://localhost:5050/api/club';
+const API_BASE_URL = 'http://funnyclub-be.herokuapp.com/api/club';
 
 const client = axios.create({
 	baseURL: API_BASE_URL,

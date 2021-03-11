@@ -28,7 +28,7 @@ export const UpdateFile = (props) => {
     const Authorization = localStorage.getItem("Authorization");
     axios({
       method: "put",
-      url: `https://team11-api.azurewebsites.net/api/event/updateFile/ImageEvent/${id}`,
+      url: `http://funnyclub-be.herokuapp.com/api/event/updateFile/ImageEvent/${id}`,
       headers: {
         "Content-Type": "multipart/form-data",
         Accept: "application/json",

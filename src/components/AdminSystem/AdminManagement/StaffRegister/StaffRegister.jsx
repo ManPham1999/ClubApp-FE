@@ -17,7 +17,7 @@ const StaffRegister = (props) => {
     const Authorization = localStorage.getItem("Authorization");
     Axios({
       method: "POST",
-      url: `https://team11-api.azurewebsites.net/api/admin/registerStaff`,
+      url: `http://funnyclub-be.herokuapp.com/api/admin/registerStaff`,
       headers: {
         Accept: "application/json",
         Authorization: `${Authorization}`,

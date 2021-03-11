@@ -19,7 +19,7 @@ function StudentChart(props) {
 		if (Authorization) {
 			Axios({
 				method: 'GET',
-				url: `https://team11-api.azurewebsites.net/api/student/fillterStudent`,
+				url: `http://funnyclub-be.herokuapp.com/api/student/fillterStudent`,
 				headers: {
 					Accept: 'application/json',
 					Authorization: `${Authorization}`,

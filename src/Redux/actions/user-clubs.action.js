@@ -43,7 +43,7 @@ export const getClubById = (id) => {
   return (dispatch) => {
     const Authorization = localStorage.getItem("Authorization");
     if (Authorization) {
-      return fetch(`https://team11-api.azurewebsites.net/api/club/getClubById/${id}`, {
+      return fetch(`http://funnyclub-be.herokuapp.com/api/club/getClubById/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

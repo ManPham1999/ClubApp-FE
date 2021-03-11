@@ -56,7 +56,7 @@ export const UpdateText = (props) => {
   console.log("title", title);
   const onSubmit = (data) => {
     axios
-      .put(`https://team11-api.azurewebsites.net/api/event/update/${eventId}`, {
+      .put(`http://funnyclub-be.herokuapp.com/api/event/update/${eventId}`, {
         eventAddress: data.eventAddress,
         eventDesc: data.eventDesc,
         eventTitle: data.eventTitle,

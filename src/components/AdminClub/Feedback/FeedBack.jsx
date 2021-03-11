@@ -22,7 +22,7 @@ export const FeedBack = () => {
 
   useEffect(() => {
     axios
-      .get("https://team11-api.azurewebsites.net/api/club/getAllFeedback/" + count)
+      .get("http://funnyclub-be.herokuapp.com/api/club/getAllFeedback/" + count)
       .then((res) => {
         // setData([...res.data]);
         setData([...res.data]);
@@ -65,7 +65,7 @@ export const FeedBack = () => {
   let handleSearch = () => {
     setIsloading(true);
     axios
-      .post(`https://team11-api.azurewebsites.net/api/club/searchFeedBack/${count}`, {
+      .post(`http://funnyclub-be.herokuapp.com/api/club/searchFeedBack/${count}`, {
         searchFeedBack: search,
       })
       .then(function (response) {

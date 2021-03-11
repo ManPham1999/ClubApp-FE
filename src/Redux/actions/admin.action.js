@@ -4,7 +4,7 @@ import { fetchCreateClub } from "../../utils/ClubApiCaller";
 
 export const loginAdmin = (userName, passWord) => (dispatch) => {
   axios
-    .post("https://team11-api.azurewebsites.net/api/student/login", {
+    .post("http://funnyclub-be.herokuapp.com/api/student/login", {
       userName,
       passWord,
     })
@@ -27,7 +27,7 @@ export const loginAdmin = (userName, passWord) => (dispatch) => {
 
 export const getProfileAdmin = (userName, passWord) => (dispatch) => {
   axios
-    .get("https://team11-api.azurewebsites.net/api/student", {
+    .get("http://funnyclub-be.herokuapp.com/api/student", {
       userName,
       passWord,
     })
@@ -48,7 +48,7 @@ export const getProfileAdmin = (userName, passWord) => (dispatch) => {
 };
 export const getAllTotalClub = () => (dispatch) => {
   axios
-    .get("https://team11-api.azurewebsites.net/api/club/getAllClub")
+    .get("http://funnyclub-be.herokuapp.com/api/club/getAllClub")
     .then((res) => {
       dispatch({
         type: Types.GET_TOTAL_CLUB,
@@ -65,7 +65,7 @@ export const getAllTotalClub = () => (dispatch) => {
 
 export const getAllTotalEvent = () => (dispatch) => {
   axios
-    .get("https://team11-api.azurewebsites.net/api/event/getAll")
+    .get("http://funnyclub-be.herokuapp.com/api/event/getAll")
     .then((res) => {
       dispatch({
         type: Types.GET_TOTAL_EVENT,
@@ -86,7 +86,7 @@ export const createClub = (formData) => (dispatch) => {
   dispatch({ type: Types.CREATE_CLUB_LOADING });
   axios({
     method: "post",
-    url: "https://team11-api.azurewebsites.net/api/club/create/ImageClub",
+    url: "http://funnyclub-be.herokuapp.com/api/club/create/ImageClub",
     headers: {
       "Content-Type": "multipart/form-data",
       Accept: "application/json",

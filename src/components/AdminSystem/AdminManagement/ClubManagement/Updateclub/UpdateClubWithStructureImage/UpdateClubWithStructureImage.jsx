@@ -26,7 +26,7 @@ const UpdateClubWithStructureImage = (props) => {
     const Authorization = localStorage.getItem("Authorization");
     Axios({
       method: "GET",
-      url: `https://team11-api.azurewebsites.net/api/club/getClubById/${id}`,
+      url: `http://funnyclub-be.herokuapp.com/api/club/getClubById/${id}`,
       headers: {
         Accept: "application/json",
         Authorization: `${Authorization}`,
@@ -63,7 +63,7 @@ const UpdateClubWithStructureImage = (props) => {
     const Authorization = localStorage.getItem("Authorization");
     axios({
       method: "put",
-      url: `https://team11-api.azurewebsites.net/api/club/updateFileStruc/ImageClub/${props.id}`,
+      url: `http://funnyclub-be.herokuapp.com/api/club/updateFileStruc/ImageClub/${props.id}`,
       headers: {
         "Content-Type": "multipart/form-data",
         Accept: "application/json",
@@ -86,7 +86,7 @@ const UpdateClubWithStructureImage = (props) => {
     const Authorization = localStorage.getItem("Authorization");
     Axios({
       method: "GET",
-      url: `https://team11-api.azurewebsites.net/api/club/getClubById/${id}`,
+      url: `http://funnyclub-be.herokuapp.com/api/club/getClubById/${id}`,
       headers: {
         Accept: "application/json",
         Authorization: `${Authorization}`,

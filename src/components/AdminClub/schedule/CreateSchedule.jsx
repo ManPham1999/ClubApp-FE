@@ -39,7 +39,7 @@ const CreateSchedule = (props) => {
     const Authorization = localStorage.getItem("Authorization");
     axios({
       method: "post",
-      url: "https://team11-api.azurewebsites.net/api/club/addSchedule/" + idClub,
+      url: "http://funnyclub-be.herokuapp.com/api/club/addSchedule/" + idClub,
       headers: {
         Accept: "application/json",
         Authorization: `${Authorization}`,

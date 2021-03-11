@@ -111,7 +111,7 @@ class eventSearch extends Component {
     this.setState({ loading: true });
     axios({
       method: "GET",
-      url: "https://team11-api.azurewebsites.net/api/event/getAll",
+      url: "http://funnyclub-be.herokuapp.com/api/event/getAll",
       data: getEventParams(params),
     }).then((data) => {
       console.log(data.data);

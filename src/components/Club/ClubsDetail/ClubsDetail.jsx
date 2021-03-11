@@ -82,7 +82,7 @@ const ClubsDetail = ({
 		getAllclbs();
 		Axios({
 			method: 'GET',
-			url: `http://localhost:5050/api/club/getAllScheduleOfClub/${id}`,
+			url: `http://http://funnyclub-be.herokuapp.com/api/club/getAllScheduleOfClub/${id}`,
 			headers: {
 				Accept: 'application/json',
 				Authorization: `${Authorization}`,
@@ -97,7 +97,7 @@ const ClubsDetail = ({
 			.then(() => {
 				Axios({
 					method: 'GET',
-					url: `http://localhost:5050/api/club/getAllFeedback/${id}`,
+					url: `http://http://funnyclub-be.herokuapp.com/api/club/getAllFeedback/${id}`,
 					headers: {
 						Accept: 'application/json',
 					},
@@ -129,7 +129,7 @@ const ClubsDetail = ({
 		setVisible(true);
 		return Axios({
 			method: 'POST',
-			url: `https://team11-api.azurewebsites.net/api/student/joinClub/${id}`,
+			url: `http://funnyclub-be.herokuapp.com/api/student/joinClub/${id}`,
 			data: {requestConfirm},
 			headers: {
 				Accept: 'application/json',
@@ -167,7 +167,7 @@ const ClubsDetail = ({
 		console.log('rate', rate);
 		Axios({
 			method: 'POST',
-			url: `https://team11-api.azurewebsites.net/api/club/sendFeedBackOfClub/${id}`,
+			url: `http://funnyclub-be.herokuapp.com/api/club/sendFeedBackOfClub/${id}`,
 			data: {feedBack, rate},
 			headers: {
 				Accept: 'application/json',
@@ -190,7 +190,7 @@ const ClubsDetail = ({
 			.then(() => {
 				Axios({
 					method: 'GET',
-					url: `https://team11-api.azurewebsites.net/api/club/getAllFeedback/${id}`,
+					url: `http://funnyclub-be.herokuapp.com/api/club/getAllFeedback/${id}`,
 					headers: {
 						Accept: 'application/json',
 					},

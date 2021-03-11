@@ -123,7 +123,7 @@ class WebBannerManage extends Component {
 		const Authorization = localStorage.getItem('Authorization');
 		Axios({
 			method: 'GET',
-			url: `https://team11-api.azurewebsites.net/api/banner/getAllBanner`,
+			url: `http://funnyclub-be.herokuapp.com/api/banner/getAllBanner`,
 			headers: {
 				Accept: 'application/json',
 				Authorization: `${Authorization}`,
@@ -153,7 +153,7 @@ class WebBannerManage extends Component {
 		});
 		Axios({
 			method: 'PUT',
-			url: `https://team11-api.azurewebsites.net/api/banner/delete/${id}`,
+			url: `http://funnyclub-be.herokuapp.com/api/banner/delete/${id}`,
 			headers: {
 				Accept: 'application/json',
 				Authorization: `${Authorization}`,
@@ -168,7 +168,7 @@ class WebBannerManage extends Component {
 					const Authorization = localStorage.getItem('Authorization');
 					Axios({
 						method: 'GET',
-						url: `https://team11-api.azurewebsites.net/api/banner/getAllBanner`,
+						url: `http://funnyclub-be.herokuapp.com/api/banner/getAllBanner`,
 						headers: {
 							Accept: 'application/json',
 							Authorization: `${Authorization}`,

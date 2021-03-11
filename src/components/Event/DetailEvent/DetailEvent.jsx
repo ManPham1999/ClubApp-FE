@@ -31,7 +31,7 @@ const DetailEvent = ({event}) => {
 		const Authorization = localStorage.getItem('Authorization');
 		Axios({
 			method: 'GET',
-			url: `http://localhost:5050/api/club/getClubById/${event.Club._id}`,
+			url: `http://http://funnyclub-be.herokuapp.com/api/club/getClubById/${event.Club._id}`,
 			headers: {
 				Accept: 'application/json',
 				Authorization: `${Authorization}`,

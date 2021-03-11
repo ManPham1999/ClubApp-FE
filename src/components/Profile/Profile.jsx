@@ -69,7 +69,7 @@ const Profile = (props) => {
 		swal('Đang cập nhật...');
 		Axios({
 			method: 'POST',
-			url: ` http://localhost:5050/api/student/upload-avatar/users/${userInfor._id}`,
+			url: ` http://http://funnyclub-be.herokuapp.com/api/student/upload-avatar/users/${userInfor._id}`,
 			headers: {
 				'Content-Type': 'multipart/form-data',
 				Accept: 'application/json',
@@ -106,7 +106,7 @@ const Profile = (props) => {
 	// 	// console.log(Authorization);
 	// 	Axios({
 	// 		method: 'PUT',
-	// 		url: `https://team11-api.azurewebsites.net/api/student/updatePassword`,
+	// 		url: `http://funnyclub-be.herokuapp.com/api/student/updatePassword`,
 	// 		headers: {
 	// 			Accept: 'application/json',
 	// 			Authorization: `${Authorization}`,

@@ -13,7 +13,7 @@ const EventChart = (props) => {
 		if (Authorization) {
 			Axios({
 				method: 'GET',
-				url: `https://team11-api.azurewebsites.net/api/event/fillterEvent`,
+				url: `http://funnyclub-be.herokuapp.com/api/event/fillterEvent`,
 				headers: {
 					'Content-Type': 'application/json',
 					Accept: 'application/json',

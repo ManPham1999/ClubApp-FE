@@ -131,7 +131,7 @@ const AddClub = (props) => {
       setIsloading(true);
       axios({
         method: "post",
-        url: "https://team11-api.azurewebsites.net/api/club/create/ImageClub",
+        url: "http://funnyclub-be.herokuapp.com/api/club/create/ImageClub",
         headers: {
           "Content-Type": "multipart/form-data",
           Accept: "application/json",

@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const getAllScheduleOfClub = (id) => (dispatch) => {
   axios
-    .get(`https://team11-api.azurewebsites.net/api/club/getAllScheduleOfClub/${id}`)
+    .get(`http://funnyclub-be.herokuapp.com/api/club/getAllScheduleOfClub/${id}`)
     .then((res) => {
       dispatch({
         type: Types.GET_ALL_SCHEDULE_CLUB,

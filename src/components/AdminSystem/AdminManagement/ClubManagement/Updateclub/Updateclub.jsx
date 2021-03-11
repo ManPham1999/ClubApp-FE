@@ -21,7 +21,7 @@ const Updateclub = (props) => {
 		const Authorization = localStorage.getItem('Authorization');
 		Axios({
 			method: 'GET',
-			url: `https://team11-api.azurewebsites.net/api/club/getClubById/${id}`,
+			url: `http://funnyclub-be.herokuapp.com/api/club/getClubById/${id}`,
 			headers: {
 				Accept: 'application/json',
 				Authorization: `${Authorization}`,
@@ -43,7 +43,7 @@ const Updateclub = (props) => {
 		if (Authorization) {
 			Axios({
 				method: 'PUT',
-				url: `https://team11-api.azurewebsites.net/api/club/updateInfoText/${id}`,
+				url: `http://funnyclub-be.herokuapp.com/api/club/updateInfoText/${id}`,
 				headers: {
 					Accept: 'application/json',
 					Authorization: `${Authorization}`,

@@ -63,7 +63,7 @@ const ViewAllEvent = (props) => {
       icon: <WarningOutlined />,
       onOk() {
         axios
-          .put(`https://team11-api.azurewebsites.net/api/event/delete/${idEvent}`)
+          .put(`http://funnyclub-be.herokuapp.com/api/event/delete/${idEvent}`)
           .then((res) => {
             dispatch(getClubById(clubId));
             cogoToast.success("Xoá thành công");
@@ -150,7 +150,7 @@ const ViewAllEvent = (props) => {
     setIsloading(true);
     console.log("search", search);
     axios
-      .post(`https://team11-api.azurewebsites.net/api/event/searchEvent/${clubId}`, {
+      .post(`http://funnyclub-be.herokuapp.com/api/event/searchEvent/${clubId}`, {
         searchEvent: search,
       })
       .then(function (response) {

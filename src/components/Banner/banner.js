@@ -9,7 +9,7 @@ function Banner(props) {
 	useEffect(() => {
 		Axios({
 			method: 'GET',
-			url: `https://team11-api.azurewebsites.net/api/banner/getAllBannerForHomePage`,
+			url: `http://funnyclub-be.herokuapp.com/api/banner/getAllBannerForHomePage`,
 			headers: {
 				Accept: 'application/json',
 			},
