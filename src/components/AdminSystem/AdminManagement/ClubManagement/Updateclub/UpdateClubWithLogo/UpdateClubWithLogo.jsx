@@ -35,7 +35,7 @@ const UpdateClubWithLogo = (props) => {
 		const Authorization = localStorage.getItem('Authorization');
 		axios({
 			method: 'PUT',
-			url: `http://funnyclub-be.herokuapp.com/api/club/updateFileLogo/ImageClub/${id}`,
+			url: `https://funnyclub-be.herokuapp.com/api/club/updateFileLogo/ImageClub/${id}`,
 			headers: {
 				'Content-Type': 'multipart/form-data',
 				Accept: 'application/json',

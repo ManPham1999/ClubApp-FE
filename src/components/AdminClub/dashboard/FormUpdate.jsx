@@ -87,7 +87,7 @@ export const FormUpdate = (props) => {
     setBlur(true);
     const Authorization = localStorage.getItem("Authorization");
     axios
-      .put(`http://funnyclub-be.herokuapp.com/api/club/updateInfoText/${_id}`, {
+      .put(`https://funnyclub-be.herokuapp.com/api/club/updateInfoText/${_id}`, {
         clubDesc: data.clubDesc,
         clubEmail: data.clubEmail,
         clubFace: data.clubFace,

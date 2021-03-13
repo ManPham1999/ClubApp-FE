@@ -114,7 +114,7 @@ class ClubIndex extends Component {
     this.setState({ loading: true });
     axios({
       method: "GET",
-      url: "http://funnyclub-be.herokuapp.com/api/club/getAllClub",
+      url: "https://funnyclub-be.herokuapp.com/api/club/getAllClub",
       data: getClubParams(params),
     }).then((data) => {
       console.log(data);
@@ -136,7 +136,7 @@ class ClubIndex extends Component {
     });
     Axios({
       method: "DELETE",
-      url: `http://funnyclub-be.herokuapp.com/api/club/delete/${id}`,
+      url: `https://funnyclub-be.herokuapp.com/api/club/delete/${id}`,
       headers: {
         Accept: "application/json",
         Authorization: `${Authorization}`,
@@ -150,7 +150,7 @@ class ClubIndex extends Component {
           });
           Axios({
             method: "GET",
-            url: `http://funnyclub-be.herokuapp.com/api/club/getAllClub`,
+            url: `https://funnyclub-be.herokuapp.com/api/club/getAllClub`,
             headers: {
               Accept: "application/json",
             },

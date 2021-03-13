@@ -69,7 +69,7 @@ export const ViewAllStudent = () => {
       onOk() {
         axios
           .put(
-            `http://funnyclub-be.herokuapp.com/api/adminClub/removeStudent/${idStudent}/${idClub}`
+            `https://funnyclub-be.herokuapp.com/api/adminClub/removeStudent/${idStudent}/${idClub}`
           )
           .then((res) => {
             console.log("res", res);
@@ -136,7 +136,7 @@ export const ViewAllStudent = () => {
     setIsloading(true);
     console.log("search", search);
     axios
-      .post(`http://funnyclub-be.herokuapp.com/api/club/searchStudent/${idClub}`, {
+      .post(`https://funnyclub-be.herokuapp.com/api/club/searchStudent/${idClub}`, {
         searchStudent: search,
       })
       .then(function (response) {

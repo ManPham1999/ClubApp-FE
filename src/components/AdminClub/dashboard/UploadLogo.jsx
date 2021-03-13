@@ -32,7 +32,7 @@ export const UploadLogo = (props) => {
     const Authorization = localStorage.getItem("Authorization");
     axios({
       method: "put",
-      url: `http://funnyclub-be.herokuapp.com/api/club/updateFileLogo/ImageClub/${props.id}`,
+      url: `https://funnyclub-be.herokuapp.com/api/club/updateFileLogo/ImageClub/${props.id}`,
       headers: {
         "Content-Type": "multipart/form-data",
         Accept: "application/json",

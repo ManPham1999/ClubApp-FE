@@ -36,7 +36,7 @@ export const ViewSchedule = (props) => {
       icon: <WarningOutlined />,
       onOk() {
         axios
-          .put(`http://funnyclub-be.herokuapp.com/api/club/deleteSchedule/${id}`)
+          .put(`https://funnyclub-be.herokuapp.com/api/club/deleteSchedule/${id}`)
           .then((res) => {
             dispatch(getClubById(idClub));
             cogoToast.success("Xoá thành công");
@@ -116,7 +116,7 @@ export const ViewSchedule = (props) => {
     setIsloading(true);
     console.log("search", search);
     axios
-      .post(`http://funnyclub-be.herokuapp.com/api/club/searchSchedule/${idClub}`, {
+      .post(`https://funnyclub-be.herokuapp.com/api/club/searchSchedule/${idClub}`, {
         searchSchedule: search,
       })
       .then(function (response) {

@@ -25,7 +25,7 @@ export const ConfirmStudent = (props) => {
       onOk() {
         axios
           .post(
-            `http://funnyclub-be.herokuapp.com/api/adminClub/accessForStudent/${idStudent}/${idClub}`
+            `https://funnyclub-be.herokuapp.com/api/adminClub/accessForStudent/${idStudent}/${idClub}`
           )
           .then((res) => {
             dispatch(getClubById(idClub));
@@ -47,7 +47,7 @@ export const ConfirmStudent = (props) => {
       onOk() {
         axios
           .put(
-            `http://funnyclub-be.herokuapp.com/api/adminClub/removeStudent/${idStudent}/${idClub}`
+            `https://funnyclub-be.herokuapp.com/api/adminClub/removeStudent/${idStudent}/${idClub}`
           )
           .then((res) => {
             dispatch(getClubById(idClub));

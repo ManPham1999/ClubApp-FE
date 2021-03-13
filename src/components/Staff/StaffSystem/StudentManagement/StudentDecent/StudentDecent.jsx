@@ -119,7 +119,7 @@ const StudentDecent = (props) => {
 					if (Authorization) {
 						Axios({
 							method: 'POST',
-							url: `http://funnyclub-be.herokuapp.com/api/adminClub/accessAdminForClub/${id}/${isChoosen}`,
+							url: `https://funnyclub-be.herokuapp.com/api/adminClub/accessAdminForClub/${id}/${isChoosen}`,
 							headers: {
 								Accept: 'application/json',
 								Authorization: `${Authorization}`,

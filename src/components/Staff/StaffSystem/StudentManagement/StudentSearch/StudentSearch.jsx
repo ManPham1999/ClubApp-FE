@@ -119,7 +119,7 @@ class StudentSearch extends Component {
     if (Authorization) {
       axios({
         method: "GET",
-        url: `http://funnyclub-be.herokuapp.com/api/student/getAllUser`,
+        url: `https://funnyclub-be.herokuapp.com/api/student/getAllUser`,
         headers: {
           "Content-Type": "multipart/form-data",
           Accept: "application/json",

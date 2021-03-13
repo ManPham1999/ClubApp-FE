@@ -1,6 +1,6 @@
 import Axios from 'axios';
 import axios from 'axios';
-const API_BASE_URL = 'http://funnyclub-be.herokuapp.com/api/event';
+const API_BASE_URL = 'https://funnyclub-be.herokuapp.com/api/event';
 
 const client = axios.create({
 	baseURL: API_BASE_URL,

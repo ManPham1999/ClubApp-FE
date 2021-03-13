@@ -13,7 +13,7 @@ const UpdateEvent = (props) => {
   //   const Authorization = localStorage.getItem("Authorization");
   //   axios({
   //     method: "get",
-  //     url: `http://funnyclub-be.herokuapp.com/api/event/getIdById/${props.match.params.id}`,
+  //     url: `https://funnyclub-be.herokuapp.com/api/event/getIdById/${props.match.params.id}`,
   //     headers: {
   //       Accept: "application/json",
   //       Authorization: `${Authorization}`,

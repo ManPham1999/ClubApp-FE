@@ -68,7 +68,7 @@ export const DashboardInfo = () => {
     const Authorization = localStorage.getItem("Authorization");
     axios({
       method: "put",
-      url: `http://funnyclub-be.herokuapp.com/api/club/updateFileImageBanner/ImageClub/${dataInfo._id}`,
+      url: `https://funnyclub-be.herokuapp.com/api/club/updateFileImageBanner/ImageClub/${dataInfo._id}`,
       headers: {
         "Content-Type": "multipart/form-data",
         Accept: "application/json",

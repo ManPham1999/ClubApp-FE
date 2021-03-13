@@ -72,7 +72,7 @@ const UpdateSchedule = (props) => {
     console.log("contentSave", contentSave);
 
     axios
-      .put(`http://funnyclub-be.herokuapp.com/api/club/updateSchedule/${id}`, {
+      .put(`https://funnyclub-be.herokuapp.com/api/club/updateSchedule/${id}`, {
         room: roomSave,
         content: contentSave,
         note: noteSave,

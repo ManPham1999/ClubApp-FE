@@ -57,7 +57,7 @@ const CreateEvent = (props) => {
     const Authorization = localStorage.getItem("Authorization");
     axios({
       method: "post",
-      url: "http://funnyclub-be.herokuapp.com/api/event/create/ImageEvent/",
+      url: "https://funnyclub-be.herokuapp.com/api/event/create/ImageEvent/",
       headers: {
         "Content-Type": "multipart/form-data",
         Accept: "application/json",

@@ -63,7 +63,7 @@ export const RegistStudents = (
 	major,
 ) => (dispatch) => {
 	return fetch(
-		`http://funnyclub-be.herokuapp.com/api/student/registerUser`,
+		`https://funnyclub-be.herokuapp.com/api/student/registerUser`,
 		{
 			method: 'POST',
 			body: JSON.stringify({
@@ -117,7 +117,7 @@ export const RegistStudents = (
 // 		}
 // 		// const Authorization = localStorage.getItem('Authorization');
 // 		// if (Authorization) {
-// 		//     return fetch(`http://funnyclub-be.herokuapp.com/api/student/${id}`, {
+// 		//     return fetch(`https://funnyclub-be.herokuapp.com/api/student/${id}`, {
 // 		//         method: 'GET',
 // 		//         headers: {
 // 		//             'Content-Type': 'application/json',
@@ -141,7 +141,7 @@ export const actGetAllStudentRequest = () => (dispatch) => {
 	if (Authorization) {
 		Axios({
 			method: 'GET',
-			url: `http://funnyclub-be.herokuapp.com/api/student/getAllUser`,
+			url: `https://funnyclub-be.herokuapp.com/api/student/getAllUser`,
 			headers: {
 				'Content-Type': 'application/json',
 				Accept: 'application/json',
@@ -165,7 +165,7 @@ export const getChartStudent = () => (dispatch) => {
 	if (Authorization) {
 		Axios({
 			method: 'GET',
-			url: `http://funnyclub-be.herokuapp.com/api/student/fillterStudent`,
+			url: `https://funnyclub-be.herokuapp.com/api/student/fillterStudent`,
 			headers: {
 				'Content-Type': 'application/json',
 				Accept: 'application/json',

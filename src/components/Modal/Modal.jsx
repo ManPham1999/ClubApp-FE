@@ -100,7 +100,7 @@ const MyVerticallyCenteredModal = (props) => {
 		Axios({
 			method: 'POST',
 			url:
-				'http://funnyclub-be.herokuapp.com/api/student/registerUser/ImageAvatar',
+				'https://funnyclub-be.herokuapp.com/api/student/registerUser/ImageAvatar',
 			headers: {
 				'Content-Type': 'multipart/form-data',
 				Accept: 'application/json',

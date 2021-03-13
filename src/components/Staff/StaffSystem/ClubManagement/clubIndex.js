@@ -107,7 +107,7 @@ class ClubIndex extends Component {
     this.setState({ loading: true });
     axios({
       method: "GET",
-      url: "http://funnyclub-be.herokuapp.com/api/club/getAllClub",
+      url: "https://funnyclub-be.herokuapp.com/api/club/getAllClub",
       data: getClubParams(params),
     }).then((data) => {
       console.log(data);

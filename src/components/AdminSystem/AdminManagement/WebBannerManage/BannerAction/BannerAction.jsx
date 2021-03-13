@@ -42,7 +42,7 @@ const BannerAction = (props) => {
     const Authorization = localStorage.getItem("Authorization");
     axios({
       method: "POST",
-      url: `http://funnyclub-be.herokuapp.com/api/banner/create/imageBanner`,
+      url: `https://funnyclub-be.herokuapp.com/api/banner/create/imageBanner`,
       headers: {
         "Content-Type": "multipart/form-data",
         Accept: "application/json",
@@ -69,7 +69,7 @@ const BannerAction = (props) => {
     const Authorization = localStorage.getItem("Authorization");
     Axios({
       method: "GET",
-      url: `http://funnyclub-be.herokuapp.com/api/club/getClubById/${id}`,
+      url: `https://funnyclub-be.herokuapp.com/api/club/getClubById/${id}`,
       headers: {
         Accept: "application/json",
         Authorization: `${Authorization}`,
